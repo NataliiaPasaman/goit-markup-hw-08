@@ -1,0 +1,37 @@
+.section-work {
+    padding-top: 0;
+    padding-bottom: 94px;
+}
+
+.section-work__list {
+    @include FlexBox (flex, center, null);
+    flex-wrap: wrap;
+}
+
+.section-work__item {
+    margin-right: 30px;
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.section-work__thumb {
+    position: relative;
+}
+
+.section-work__name {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    @include FlexBox (flex);
+    width: 100%;
+    height: 70px;
+
+    font-weight: 700;
+    font-size: $main-font-size;
+    line-height: 1.14;
+    letter-spacing: $let-spacing;
+    color: $bcg-color;
+    background-color: rgba(47, 48, 58, 0.8);
+}

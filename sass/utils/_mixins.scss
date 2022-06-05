@@ -1,0 +1,5 @@
+@mixin FlexBox ($display, $ai: center, $jc: center) {
+    display: $display;
+    align-items: $ai;
+    justify-content: $jc;
+}

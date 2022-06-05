@@ -1,0 +1,115 @@
+.page-footer {
+    background-color: #2F303A;
+}
+.page-footer__container {
+    display: flex;
+    align-items: baseline;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin: 0 auto;
+}
+
+.footer-address__location {
+    margin-bottom: 9px;
+
+    color: $bcg-color;
+    font-style: normal;
+    font-size: $main-font-size;
+    line-height: 1.71;
+    text-align: left;
+    letter-spacing: $let-spacing;
+}
+
+.footer-address__item:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+.footer-address__link {
+    display: block;
+    padding: 0;
+
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    font-weight: 400;
+    font-size: $main-font-size;
+    line-height: 1.71;
+    text-align: left;
+    letter-spacing: $let-spacing;
+
+    transition: color $trans-hover;
+
+    &:hover,
+    &:focus {
+        color: var(--bcg-color);
+    }
+}
+
+// Форма підписки 
+.footer-form {
+    margin-left: auto;
+}
+
+.subscription-form__title {
+    display: block;
+    margin-bottom: 20px;
+
+    color: $bcg-color;
+    font-size: $main-font-size;
+    line-height: 1.14;
+    letter-spacing: $let-spacing;
+    text-transform: uppercase;
+}
+
+.subscription-form__container {
+    @include FlexBox (flex);
+}
+
+.subscription-form__label {
+    position: relative;
+
+    display: block;
+    margin-right: 12px;
+}
+
+.subscription-form__text {
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    transform: translateY(-50%);
+    
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: $let-spacing;
+    transition: transform $trans-hover;
+
+    .subscription-form__label:focus-within &--up {
+        transform: translateY(-45px);
+    }
+
+    .subscription-form__input:not(:placeholder-shown) + &--up {
+        transform: translateY(-45px);
+    }
+    
+}
+
+.subscription-form__input {
+    display: inline-block;
+    width: 358px;
+    height: 50px;
+    padding: 15px 16px;
+    margin: 0;
+  
+    background-color: transparent;
+    color: $bcg-color;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+}
+
+.button__icon {
+    fill: $bcg-color;
+    &--end {
+        margin-left: 10px;
+    }
+}

@@ -1,0 +1,66 @@
+.social-networks {
+    @include FlexBox (flex);
+    padding-left: 32px;
+    padding-right: 32px;
+
+    &--block {
+        padding: 0;
+    }    
+}
+
+.social-networks__item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.social-networks__link {
+    @include FlexBox (flex);
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+
+    color: $icon-color;
+    background-color: $bcg-color;
+
+    transition: color $trans-hover,
+    background-color $trans-hover;
+
+    &:hover,
+    &:focus {
+        color: #FFFFFF;
+        background-color: $accent-color;
+    }
+}
+
+.social-networks__icon {
+    fill: currentColor; 
+} 
+
+.footer-social-networks {
+    margin-left: 70px;
+}
+
+.footer-social-networks__title {
+    margin-bottom: 20px;
+    width: 145px;
+    color: $bcg-color;
+    font-size: $main-font-size;
+    line-height: 1.14;
+    letter-spacing: $let-spacing;
+}
+
+
+.social-networks__link--colors {
+    color: $bcg-color;
+    background-color: rgba(255, 255, 255, 0.1);
+
+    transition: background-color $trans-hover;
+
+    &--colors:hover,
+    &--colors:focus {
+    background-color: $accent-color;
+}
+}
+
+.social-networks__icon {
+    fill: currentColor;
+}

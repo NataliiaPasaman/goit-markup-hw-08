@@ -1,0 +1,51 @@
+.section-gallery {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.section-gallery__filter-list {
+    @include FlexBox (flex);
+    margin-bottom: 50px;
+}
+
+.section-gallery__filter-item:not(:last-child) {
+    margin-right: 8px;
+}
+
+.section-gallery__filter-button {
+    padding: 6px 22px;
+    border: transparent;
+    border-radius: 4px;
+
+    color: $title-color;
+    background-color: #F5F4FA;
+    box-shadow: none;
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    text-align: center;
+    letter-spacing: $let-spacing;
+
+    transition: color $trans-hover,
+    background-color $trans-hover,
+    box-shadow $trans-hover;
+
+    &:hover, &:focus {
+    color: $bcg-color;
+    background-color: $accent-color;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 
+    0px 1px 2px rgba(0, 0, 0, 0.08), 
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+    
+    &--active {
+    color: $bcg-color;
+    background-color: $accent-color;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 
+    0px 1px 2px rgba(0, 0, 0, 0.08), 
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+}
+
