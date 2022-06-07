@@ -7,13 +7,34 @@
     }
 }
 
-// .section-team__list {
-//     @include FlexBox (flex, center, null);
-//     flex-wrap: wrap;
-// }
+.section-team__list {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+    
+        @include FlexBox (flex, center, null);
+        flex-wrap: wrap;
+    }
+}
 
 .section-team__item:not(:last-child) {
-    margin-bottom: 30px;
+    @media screen and (max-width: 767px) {
+           margin-bottom: 30px;
+   }
+}
+
+
+.section-team__item {
+    width: 100%;
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        &:nth-child(2n + 1) {
+            margin-right: 30px;
+        }
+        &:nth-child(-n + 2) {
+            margin-bottom: 30px;
+        }
+
+        width: calc((100% - 30px) / 2);
+    }  
 }
 
 // .section-team__item {

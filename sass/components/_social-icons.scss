@@ -14,7 +14,7 @@
 }
 
 .social-networks__link {
-    // @include FlexBox (flex);
+    @include FlexBox (flex);
     width: 44px;
     height: 44px;
     border-radius: 50%;
