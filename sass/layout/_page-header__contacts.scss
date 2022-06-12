@@ -1,26 +1,38 @@
 .contacts {
-    display: none;
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+    
+    @include FlexBox (flex, center, null);
+
+    @media screen and (max-width: 1199px) {
+        flex-wrap: wrap;
+        margin-left: 84px;
+    }
+
     @media screen and (min-width: 1200px) {
-        @include FlexBox (flex, center, null);
         margin-left: auto;
     }
 }
 
 .contacts__item:not(:last-child) {
-    margin-right: 50px;
+    @media screen and (max-width: 1199px) {
+        margin-bottom: 10px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-right: 50px;
+    }
 }
 
 .contacts__link {
     @include FlexBox (flex);
-
-    padding-top: 32px;
-    padding-bottom: 32px;
     
     color: $main-text-color;
     text-decoration: none;
     font-weight: 500;
-    font-size: $main-font-size;
-    line-height: 1.14;
+    font-size: 12px;
+    line-height: 1.17;
     text-align: left;
     letter-spacing: 0.02em;
 
@@ -30,9 +42,27 @@
     &:focus {
     color: $accent-color;
 }
+
+@media screen and (min-width: 1200px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-size: $main-font-size;
+    line-height: 1.14;
+}
 }
 
 .contacts-icon {
     margin-right: 10px;
     fill: currentColor;
+
+    @media screen and (max-width: 1199px) {
+        &--emil {
+            width: 14px;
+            height: 10px;
+        }
+        &--tel {
+            width: 10px;
+            height: 14px;
+        }
+    }
 }
