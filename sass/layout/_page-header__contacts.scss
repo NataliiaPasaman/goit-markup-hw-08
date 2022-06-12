@@ -1,6 +1,9 @@
 .contacts {
-    @include FlexBox (flex, center, null);
-    margin-left: auto;
+    display: none;
+    @media screen and (min-width: 1200px) {
+        @include FlexBox (flex, center, null);
+        margin-left: auto;
+    }
 }
 
 .contacts__item:not(:last-child) {

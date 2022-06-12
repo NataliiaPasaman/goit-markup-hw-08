@@ -3,5 +3,7 @@
 }
 
 .page-header__container {
-    @include FlexBox (flex, center, null);
+    @media screen and (min-width: 1200px) {
+        @include FlexBox (flex, center, null);
+    }
 }
