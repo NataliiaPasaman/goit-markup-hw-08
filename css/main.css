@@ -140,15 +140,21 @@ li {
   margin-bottom: 20px;
 }
 
-@media screen and (max-width: 767px) {
+.page-footer__logo--white {
+  color: #FFFFFF;
+}
+
+@media screen and (max-width: 1199px) {
   .page-footer__logo {
     margin-left: auto;
     margin-right: auto;
   }
 }
 
-.page-footer__logo--white {
-  color: #FFFFFF;
+@media screen and (min-width: 1200px) {
+  .page-footer__logo {
+    margin-right: 0;
+  }
 }
 
 .title {
@@ -182,6 +188,7 @@ li {
   width: 200px;
   height: 50px;
   padding: 0;
+  margin: 0 auto;
   border-radius: 4px;
   border: 1px solid transparent;
   color: #FFFFFF;
@@ -489,6 +496,12 @@ li {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .footer-social-networks {
+    margin-left: 70px;
+  }
+}
+
 .footer-social-networks__title {
   margin-bottom: 20px;
   color: #FFFFFF;
@@ -497,7 +510,7 @@ li {
   letter-spacing: 0.03em;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .footer-social-networks__title {
     text-align: center;
   }
@@ -1228,6 +1241,25 @@ li {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .container-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .container-flex {
+    margin-bottom: 60px;
+  }
+}
+
 .footer-address__location {
   margin-bottom: 8px;
   color: #FFFFFF;
@@ -1238,8 +1270,21 @@ li {
   letter-spacing: 0.03em;
 }
 
+@media screen and (min-width: 1200px) {
+  .footer-address__location {
+    margin-bottom: 9px;
+    text-align: left;
+  }
+}
+
 .footer-address__item:not(:last-child) {
   margin-bottom: 8px;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-address__item:not(:last-child) {
+    margin-bottom: 9px;
+  }
 }
 
 .footer-address__link {
@@ -1260,6 +1305,18 @@ li {
   color: var(--bcg-color);
 }
 
+@media screen and (min-width: 1200px) {
+  .footer-address__link {
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-form {
+    margin-left: auto;
+  }
+}
+
 .subscription-form__title {
   display: block;
   margin-bottom: 20px;
@@ -1271,10 +1328,52 @@ li {
   text-transform: uppercase;
 }
 
+@media screen and (min-width: 1200px) {
+  .subscription-form__title {
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .subscription-form__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .subscription-form__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .subscription-form__label {
   position: relative;
   display: block;
   margin-bottom: 20px;
+}
+
+@media screen and (min-width: 1200px) {
+  .subscription-form__label {
+    margin-right: 12px;
+    margin-bottom: 0;
+  }
 }
 
 .subscription-form__text {
@@ -1308,6 +1407,7 @@ li {
   width: 100%;
   height: 50px;
   padding: 15px 16px;
+  margin: 0;
   background-color: transparent;
   color: #FFFFFF;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -1316,8 +1416,22 @@ li {
   border-radius: 4px;
 }
 
-.button--center {
-  margin: 0 auto;
+@media screen and (min-width: 768px) {
+  .subscription-form__input {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .subscription-form__input {
+    width: 358px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-form__button {
+    margin: 0;
+  }
 }
 
 .button__icon {

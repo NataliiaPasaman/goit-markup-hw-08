@@ -1,12 +1,6 @@
 .social-networks {
     margin: 0 auto;
-    @include FlexBox (flex);
-    // padding-left: 32px;
-    // padding-right: 32px;
-
-    // &--block {
-    //     padding: 0;
-    // }    
+    @include FlexBox (flex);  
 }
 
 .social-networks__item:not(:last-child) {
@@ -40,7 +34,10 @@
     @media screen and (max-width: 767px) {
         padding: 60px 0;
     }
-    // margin-left: 70px;
+
+    @media screen and (min-width: 1200px) {
+       margin-left: 70px;
+    }
 }
 
 .footer-social-networks__title {
@@ -50,11 +47,9 @@
     line-height: 1.14;
     letter-spacing: $let-spacing;
 
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 1199px) {
         text-align: center;
     }
-
-    // width: 145px;
 }
 
 

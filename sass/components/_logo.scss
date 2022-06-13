@@ -40,15 +40,18 @@
 
 .page-footer__logo {
     padding: 0;
-    // margin-right: 0;
     margin-bottom: 20px;
 
-    @media screen and (max-width: 767px) {
+    &--white {
+        color: $bcg-color;
+    }
+
+    @media screen and (max-width: 1199px) {
         margin-left: auto;
         margin-right: auto;
     }
-    
-    &--white {
-        color: $bcg-color;
+
+    @media screen and (min-width: 1200px) {
+        margin-right: 0;
     }
 }
