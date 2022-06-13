@@ -43,9 +43,9 @@
     }
 
     @media screen and (min-width: 1200px) {
+        margin-bottom: 0;
         &:last-child {
             margin-right: 0;
-            margin-bottom: 0;
         }   
     }
 }
