@@ -1,5 +1,5 @@
 .button {
-    @include FlexBox (inline-flex);
+    @include FlexBox (flex);
 
     width: 200px;
     height: 50px;

@@ -22,17 +22,17 @@
             fill: $accent-color;
         }
     
-        & .mobile-menu__icon--close {
-            display: none;
-        }
-    
         &.is-open .mobile-menu__icon--open {
             display: none;
         }
-    
+
         &.is-open .mobile-menu__icon--close {
             display: block;
         }
+    }
+
+    .mobile-menu__icon--close {
+        display: none;
     }
 
 .mobile-menu__icon {

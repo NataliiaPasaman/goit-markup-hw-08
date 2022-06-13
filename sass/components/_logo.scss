@@ -38,12 +38,17 @@
     animation: logoA 1500ms ease-in-out infinite normal;
 }
 
-// .page-footer__logo {
-//     padding: 0;
-//     margin-right: 0;
-//     margin-bottom: 20px;
+.page-footer__logo {
+    padding: 0;
+    // margin-right: 0;
+    margin-bottom: 20px;
+
+    @media screen and (max-width: 767px) {
+        margin-left: auto;
+        margin-right: auto;
+    }
     
-//     &--white {
-//         color: $bcg-color;
-//     }
-// }
+    &--white {
+        color: $bcg-color;
+    }
+}

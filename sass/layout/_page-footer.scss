@@ -2,26 +2,35 @@
     background-color: #2F303A;
 }
 .page-footer__container {
-    display: flex;
-    align-items: baseline;
+    // text-align: center;
+    // margin: 0 auto;
     padding-top: 60px;
     padding-bottom: 60px;
-    margin: 0 auto;
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        align-items: baseline;
+
+        // margin: 0 auto;
+    }
 }
 
 .footer-address__location {
-    margin-bottom: 9px;
+    margin-bottom: 8px;
+    // margin-bottom: 9px;
 
     color: $bcg-color;
     font-style: normal;
     font-size: $main-font-size;
     line-height: 1.71;
-    text-align: left;
+    text-align: center;
+    // text-align: left;
     letter-spacing: $let-spacing;
 }
 
 .footer-address__item:not(:last-child) {
-    margin-bottom: 9px;
+    margin-bottom: 8px;
+    // margin-bottom: 9px;
 }
 
 .footer-address__link {
@@ -33,7 +42,7 @@
     font-weight: 400;
     font-size: $main-font-size;
     line-height: 1.71;
-    text-align: left;
+    text-align: center;
     letter-spacing: $let-spacing;
 
     transition: color $trans-hover;
@@ -45,9 +54,10 @@
 }
 
 // Форма підписки 
-.footer-form {
-    margin-left: auto;
-}
+
+// .footer-form {
+//     margin-left: auto;
+// }
 
 .subscription-form__title {
     display: block;
@@ -57,18 +67,20 @@
     font-size: $main-font-size;
     line-height: 1.14;
     letter-spacing: $let-spacing;
+    text-align: center;
     text-transform: uppercase;
 }
 
-.subscription-form__container {
-    @include FlexBox (flex);
-}
+// .subscription-form__container {
+//     @include FlexBox (flex);
+// }
 
 .subscription-form__label {
     position: relative;
 
     display: block;
-    margin-right: 12px;
+    margin-bottom: 20px;
+    // margin-right: 12px;
 }
 
 .subscription-form__text {
@@ -95,16 +107,21 @@
 
 .subscription-form__input {
     display: inline-block;
-    width: 358px;
+    width: 100%;
+    // width: 358px;
     height: 50px;
     padding: 15px 16px;
-    margin: 0;
+    // margin: 0;
   
     background-color: transparent;
     color: $bcg-color;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
+}
+
+.button--center {
+    margin: 0 auto;
 }
 
 .button__icon {

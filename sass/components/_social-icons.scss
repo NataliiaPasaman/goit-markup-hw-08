@@ -36,18 +36,26 @@
     fill: currentColor; 
 } 
 
-// .footer-social-networks {
-//     margin-left: 70px;
-// }
+.footer-social-networks {
+    @media screen and (max-width: 767px) {
+        padding: 60px 0;
+    }
+    // margin-left: 70px;
+}
 
-// .footer-social-networks__title {
-//     margin-bottom: 20px;
-//     width: 145px;
-//     color: $bcg-color;
-//     font-size: $main-font-size;
-//     line-height: 1.14;
-//     letter-spacing: $let-spacing;
-// }
+.footer-social-networks__title {
+    margin-bottom: 20px;
+    color: $bcg-color;
+    font-size: $main-font-size;
+    line-height: 1.14;
+    letter-spacing: $let-spacing;
+
+    @media screen and (max-width: 767px) {
+        text-align: center;
+    }
+
+    // width: 145px;
+}
 
 
 .social-networks__link--colors {
