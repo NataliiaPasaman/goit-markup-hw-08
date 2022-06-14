@@ -225,27 +225,65 @@
             <div class="container section-work__container">
                 <h2 class="title">Чем мы занимаемся</h2>
                 <ul class="section-work__list">
+
                     <li class="section-work__item">
                         <div class="section-work__thumb">
-                            <img class="section-work__img" src="./images/our_work/coding.jpg" alt="Верстка веб-сторінки"
+                            <picture>
+                                <source srcset="./images/our_work/coding.webp 1x, 
+                                ./images/our_work/coding@2x.webp 2x, 
+                                ./images/our_work/coding@3x.webp 3x" type="image/webp">
+
+                                <source srcset="./images/our_work/coding.jpg 1x, 
+                                ./images/our_work/coding@2x.jpg 2x, 
+                                ./images/our_work/coding@3x.jpg 3x" type="image/jpeg">
+
+                                <img class="section-work__img" src="./images/our_work/coding.jpg" 
+                                alt="Верстка веб-сторінки"
                                 width="370" height="295">
+                            </picture>
+                            
                             <p class="section-work__name">ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ</p>
                         </div>
                     </li>
+
                     <li class="section-work__item">
                         <div class="section-work__thumb">
-                            <img class="section-work__img" src="./images/our_work/adaptation.jpg"
+                            <picture>
+                                <source srcset="./images/our_work/adaptation.webp 1x,
+                                ./images/our_work/adaptation@2x.webp 2x,
+                                ./images/our_work/adaptation@3x.webp 3x" type="image/webp">
+
+                                <source srcset="./images/our_work/adaptation.jpg 1x,
+                                ./images/our_work/adaptation@2x.jpg 2x,
+                                ./images/our_work/adaptation@3x.jpg 3x" type="image/jpg">
+
+                                <img class="section-work__img" src="./images/our_work/adaptation.jpg"
                                 alt="Адаптація сайту для різних десктопів" width="370" height="295">
+                            </picture>
+                            
                             <p class="section-work__name">МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ</p>
                         </div>
                     </li>
+
                     <li class="section-work__item">
                         <div class="section-work__thumb">
-                            <img class="section-work__img" src="./images/our_work/design.jpg"
+                            <picture>
+                                <source srcset="./images/our_work/design.webp 1x,
+                                ./images/our_work/design@2x.webp 2x,
+                                ./images/our_work/design@3x.webp 3x" type="image/webp">
+
+                                <source srcset="./images/our_work/design.jpg 1x,
+                                ./images/our_work/design@2x.jpg 2x,
+                                ./images/our_work/design@3x.jpg 3x" type="image/jpg">
+
+                                <img class="section-work__img" src="./images/our_work/design.jpg"
                                 alt="Робота з кольоровою гамою для дизайну" width="370" height="295">
+                            </picture>
+                            
                             <p class="section-work__name">ДИЗАЙНЕРСКИЕ РЕШЕНИЯ</p>
                         </div>
                     </li>
+
                 </ul>
             </div>
         </section>
