@@ -1,5 +1,10 @@
 .portfolio-card {
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        @include FlexBox (flex, stretch, space-between);
+        flex-wrap: wrap;
+    }
+
+    @media screen and (min-width: 1200px) {
         @include FlexBox (flex);
         flex-wrap: wrap;
     }
@@ -14,6 +19,10 @@
     box-shadow: none;
 
     transition: box-shadow $trans-hover;
+
+    @media screen and (min-width: 768px) {
+        width: calc((100% - 30px) / 2);
+    }
 
     @media screen and (min-width: 1200px) {
         width: calc((100% - 2 * 30px) / 3);
@@ -66,7 +75,6 @@
     transform: translateY(0);
 }
 }
-
 
 .portfolio-card__description {
     position: absolute;
